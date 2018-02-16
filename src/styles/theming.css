@@ -1,0 +1,99 @@
+:root{
+  --color-action: #2b9af3;
+  --color-active: #015eaa;
+  --color-background: #292929;
+  --color-input-background: #ddd;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Ubuntu', sans-serif;
+  background: var(--color-background);
+  letter-spacing: 0.05rem;
+}
+h2{
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+}
+#app{
+  display: grid;
+  grid-column-gap: .5rem;
+  grid-template-areas:
+  "header"
+  "nav"
+  "content"
+  "footer";
+}
+#app .input-container{
+  width: 100%;
+  margin-top: .75rem;
+}
+#app input{
+  width: 100%;
+  background: var(--color-input-background);
+  border: none;
+  height: 2rem;
+  border-radius: 3px;
+  padding: .5rem;
+  font-size: 1rem;
+  color: var(--color-background);
+}
+#app textarea{
+  width: 100%;
+  background: var(--color-input-background);
+  border: none;
+  border-radius: 3px;
+  padding: .5rem;
+  font-size: 1rem;
+  color: var(--color-background);
+
+}
+
+#app .page-container{
+  grid-area: content;
+  margin: 1rem;
+}
+
+#app .list {
+  max-width: 100%;
+  padding: .5rem;
+}
+
+#app .card{
+  width: 100%;
+ box-shadow:5px 5px #000;
+  font-weight: 300;
+  color: #fff;
+  margin:1.5rem 0rem;
+  box-shadow: 0px 0px 5px #000;
+  z-index: 100;
+  padding: 2rem;
+}
+
+button.action-button{
+
+  color: #fff;
+  background: var(--color-action);
+  border: none;
+
+  font-weight: 400;
+border-radius: 3px;
+}
+button.large{
+  margin-top: 1.5rem;
+  width: 60%;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+}
+button.medium{
+  width: 30%;
+  font-size: 1rem;
+  padding: .2rem .5rem;
+}
+#app .card.no-item{
+  text-align: center;
+ font-size: 1rem;
+}

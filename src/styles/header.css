@@ -1,0 +1,25 @@
+#app .primary-header{
+  grid-area: nav;
+  background: #1e1e1e;
+  list-style-type: none;
+  height: 3rem;
+  padding: .5rem 1rem;
+  display: flex;
+  z-index: 1000;
+  align-items: center;
+  box-shadow:0 0 5px #101010;
+}
+#app .primary-header .brand-logo{
+  width:2rem;
+  margin-right: auto;
+}
+#app .primary-header .brand-logo img{
+  max-width: 100%;
+}
+#app .primary-header .link a{
+  text-decoration: none;
+  letter-spacing: .02rem;
+  color: #ccc;
+  margin-left: 1rem;
+  font-weight: 200;
+}
